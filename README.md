@@ -1,3 +1,11 @@
+# Build Info
+
+This project is dependent on the server project https://github.com/WWCodeDFW/The-Tech-List.git
+
+Don't forget to run the server before running the UI.
+
+# Create React App Instructions
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

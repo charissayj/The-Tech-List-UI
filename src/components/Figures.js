@@ -6,10 +6,10 @@ const Figures = ({ figures }) => {
 
             {figures.map((figure) => (
                 <div class="card" key={figure.id}>
-                    <div class="card-body">
-                        <h5 class="card-title">{figure.name}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{figure.email}</h6>
-                        <h6 className="card-subtitle mb-2 text-muted">{figure.data}</h6>
+					<img class="card-img figure-img" src={process.env.REACT_APP_API_URL + figure.imgUrl} alt="Card image"></img>
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+						<h5 class="card-title text-white text-shadow">{figure.full_name}</h5>
+                        <h6 class="card-subtitle mb-2 text-white text-shadow">{"Born " + figure.birth_year}</h6>
                     </div>
                 </div>
             ))}

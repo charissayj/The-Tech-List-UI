@@ -8,11 +8,10 @@ class App extends Component {
     };
 
     componentDidMount() {
-        fetch('http://jsonplaceholder.typicode.com/users')
-        //     fetch('http://localhost:3001/list')
+        fetch(process.env.REACT_APP_API_URL + 'list')
             .then(res => res.json())
             .then((data) => {
-                this.setState({ figures: data })
+                this.setState({ figures: data.peopleArray })
             })
             .catch(console.log)
     }

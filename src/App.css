@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
+body {
+	font-family: 'Playfair Display', serif;
+}
+
 .App {
   text-align: center;
 }
@@ -38,4 +42,13 @@ h5 {
   width: 350px;
   height: 350px;
   box-shadow: 2px 2px 7px #282c34;
+}
+
+.text-shadow {
+	text-shadow: 2px 2px 2px #000000;
+}
+
+.figure-img {
+	height: 350px;
+	padding: 10px;
 }
